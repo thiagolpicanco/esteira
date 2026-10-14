@@ -41,7 +41,7 @@ Projeto novo entra nesta tabela pelo CEO. Regras:
 
 ## 1. Entrada
 
-O CEO recebe o pedido, escolhe o projeto (e com ele o repositório) e passa ao **PO**. O PO escreve a tarefa com:
+O **CEO gera as demandas** e consulta seu **SecondBrain** (vault Obsidian com todas as ideias e contexto) para preparar a entrada. Depois escolhe o projeto (e com ele o repositório) e passa ao **PO**. O PO escreve a tarefa com:
 
 - **Objetivo** em uma ou duas frases.
 - **Critério de aceite** verificável, em lista.
