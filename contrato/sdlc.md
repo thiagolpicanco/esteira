@@ -29,6 +29,7 @@ Cada tarefa pertence a um projeto do Paperclip, e o workspace desse projeto defi
 | Smartcheck | `sales-smartcheck` (`~/Projects/sales-smartcheck`) | GitLab (Globo) | `main` |
 | SecondBrain | `thiagolpicanco/secondbrain` | GitHub | `main` |
 | Esteira | `thiagolpicanco/esteira` | GitHub | `main` |
+| ArenaFlow | `thiagolpicanco/arenaflow` | GitHub | `main` |
 
 Projeto novo entra nesta tabela pelo CEO. Regras:
 
@@ -87,6 +88,7 @@ O Desenvolvedor roda tudo isto na branch, e o Testador roda de novo.
   3. **Scripts compilam:** se algum `.py` mudou, `python3 -m py_compile scripts/*.py`.
   4. **Travas de conteúdo:** corpo de nota existente em `Reunioes/` e `Caderno/` não muda (exceções do `AGENTS.md`), nada duplicado, referências como `[[wikilink]]`, prosa em português, sem primeira pessoa.
 - **Esteira (markdown):** conteúdo é markdown puro. Links e caminhos internos válidos (verificar com ferramenta tipo `markdown-link-check`). Sem segredo, token ou credencial. Toda mudança em `contrato/sdlc.md` é feita por PR do Agilista.
+- **ArenaFlow (frontend React/Vite + backend Quarkus/Java 25):** frontend roda `npm test` com Vitest; backend roda `mvn test`. Cobertura mínima 90% em ambos. Use `tlc-spec-lean` (Tech Lead valida antes de implementar). Conteúdo e mensagens em inglês. Siga o `AGENTS.md` do repositório para convenções de código e exceção.
 - **Repositório sem perfil aqui:** use os comandos de build e teste do `AGENTS.md`/`README` do repositório. Se não houver, o Tech Lead define na abordagem técnica antes do Desenvolvedor começar.
 
 Se alguma verificação falhar e o Desenvolvedor não conseguir corrigir dentro do escopo, ele não abre o PR/MR. Ele comenta o problema e põe a tarefa em `blocked` para o Tech Lead.
